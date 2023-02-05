@@ -31,6 +31,7 @@
 h3{
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 2vw;
 }
 
 .icons{
@@ -44,6 +45,10 @@ h3:hover{
     color: blue;
     cursor: pointer;
     border-bottom: blue solid 2px;
+}
+
+p{
+    font-size: min(3vw, 16px);
 }
 
 .mid-column{
@@ -70,25 +75,46 @@ h3:hover{
     height: 30px;
 }
 
+.email:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
 .selected-email{
     background-color: white;
     box-shadow: 0px 0px 11px 0px;
     border-radius: 5px;
 }
 
-@media screen and (max-width: 992px) {
-    .right-column{
-        display: none;
-    }
+.reply-box{
+    position: relative;
 }
 
-@media screen and (max-width: 576px) {
+.file-icon{
+    position:absolute;
+    bottom:10px;
+    left: 10px;
+}
+
+.reply-button{
+    position:absolute;
+    bottom:10px;
+    right: 10px;
+}
+
+@media screen and (max-width: 992px) {
     .left-column{
         display: none;
     }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
+    .right-column{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
     .sandwich{
         display: none;
     }
