@@ -109,13 +109,19 @@ p{
 }
 
 @media screen and (max-width: 576px) {
-    .right-column{
+    .mid-column{
         display: none;
     }
 }
 
 @media screen and (min-width: 992px) {
     .sandwich{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .back-arrow{
         display: none;
     }
 }
